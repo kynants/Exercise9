@@ -6,9 +6,15 @@
     <title>Exercise 9</title>
 </head>
 <body>
-    <!-- https://stackoverflow.com/questions/1691646/php-echo-text-color -->
     <?php
-    echo '<span style="color:magenta;text-align:center;">P</span>HP Tutorial';
-    ?>
+    // https://stackoverflow.com/questions/1691646/php-echo-text-color
+    // echo '<span style="color:magenta;text-align:center;">P</span>HP Tutorial';
+
+    // https://www.w3resource.com/php-exercises/php-basic-exercise-9.php
+    $text = 'PHP Tutorial';
+    $text = preg_replace('/(\b[a-z])/i','<span style="color:red;">\1</span>',$text);
+    echo $text;
+?>
+
 </body>
 </html>
